@@ -1,0 +1,10 @@
+const express = require('express');
+const cors = require('cors');
+const candidateRoutes = require('./routes/candidateRoutes');
+const voteRoutes = require('./routes/voteRoutes');
+const app = express();
+app.use(cors());
+app.use(express.json());
+app.use('/api/candidates', candidateRoutes);
+app.use('/api/votes', voteRoutes);
+module.exports = app;
