@@ -36,7 +36,6 @@ function AdminPage() {
       </div>
       <CandidateList candidates={candidates} />
       <ResultBoard candidates={candidates} />
-      {/* Add more admin controls/components as needed */}
     </div>
   );
 }
